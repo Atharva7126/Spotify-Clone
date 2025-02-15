@@ -20,7 +20,7 @@ function convertSecondsToMinSec(seconds) {
 
 async function GetSongs(folder) {
     currfolder = folder
-    let a = await fetch(`https://github.com/Atharva7126/Spotify-Clone/tree/main/${folder}/`)
+    let a = await fetch(`/${folder}/`)
     let response = await a.text()
 
     let div = document.createElement("div")
